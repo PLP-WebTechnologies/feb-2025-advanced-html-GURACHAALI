@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Document with List, Image, Table, and Form</title>
+</head>
+<body>
+    <!-- Ordered List with Roman Numerals -->
+    <section>
+        <h2>Tasks (Roman Numerals)</h2>
+        <ol type="I">
+            <li>Complete HTML structure</li>
+            <li>Add external image</li>
+            <li>Create contacts table</li>
+            <li>Build registration form</li>
+            <li>Ensure semantic correctness</li>
+        </ol>
+    </section>
+
+    <!-- External Image from Pexels -->
+    <section>
+        <h2>Featured Image</h2>
+        <img src="https://images.pexels.com/photos/248797/pexels-photo-248797.jpeg" alt="Nature landscape" width="500">
+    </section>
+
+    <!-- Contacts Table with Kenyan Names -->
+    <section>
+        <h2>Contacts</h2>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Mobile</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>James Mwangi</td>
+                    <td>Ngong Road, Nairobi</td>
+                    <td>+254-712-345678</td>
+                    <td>james.mwangi@example.com</td>
+                </tr>
+                <tr>
+                    <td>Grace Wanjiku</td>
+                    <td>Tom Mboya St, Mombasa</td>
+                    <td>+254-723-456789</td>
+                    <td>grace.wanjiku@example.com</td>
+                </tr>
+                <tr>
+                    <td>Peter Ochieng</td>
+                    <td>Kenyatta Ave, Kisumu</td>
+                    <td>+254-734-567890</td>
+                    <td>peter.ochieng@example.com</td>
+                </tr>
+                <tr>
+                    <td>Mary Achieng</td>
+                    <td>Eldoret Rd, Nakuru</td>
+                    <td>+254-745-678901</td>
+                    <td>mary.achieng@example.com</td>
+                </tr>
+                <tr>
+                    <td>David Kiprop</td>
+                    <td>Thika Rd, Kiambu</td>
+                    <td>+254-756-789012</td>
+                    <td>david.kiprop@example.com</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Registration Form -->
+    <section>
+        <h2>Registration Form</h2>
+        <form>
+            <fieldset>
+                <legend>Personal Information</legend>
+
+                <!-- Name Field -->
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required><br>
+
+                <!-- Email Field -->
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required><br>
+
+                <!-- Password Field -->
+                <label for="password">Password:</label><br>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required minlength="8"><br>
+
+                <!-- Date of Birth Field -->
+                <label for="dob">Date of Birth:</label><br>
+                <input type="date" id="dob" name="dob" required><br>
+
+                <!-- Dropdown for Country -->
+                <label for="country">Country:</label><br>
+                <select id="country" name="country" required>
+                    <option value="">Select your country</option>
+                    <option value="usa">USA</option>
+                    <option value="canada">Canada</option>
+                    <option value="uk">UK</option>
+                    <option value="australia">Australia</option>
+                </select><br>
+
+                <!-- Radio Buttons for Subscription -->
+                <p>Subscription Preference:</p>
+                <input type="radio" id="free" name="subscription" value="free" required>
+                <label for="free">Free Plan</label>
+                <input type="radio" id="premium" name="subscription" value="premium">
+                <label for="premium">Premium Plan</label><br>
+
+                <!-- Checkboxes for Interests -->
+                <p>Interests:</p>
+                <input type="checkbox" id="tech" name="interests" value="tech">
+                <label for="tech">Technology</label>
+                <input type="checkbox" id="music" name="interests" value="music">
+                <label for="music">Music</label>
+                <input type="checkbox" id="sports" name="interests" value="sports">
+                <label for="sports">Sports</label><br>
+
+                <!-- Submit Button -->
+                <button type="submit">Register</button>
+            </fieldset>
+        </form>
+    </section>
+</body>
+</html>
